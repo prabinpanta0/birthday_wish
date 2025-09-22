@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Quiet Party</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="welcome-candle" class="scene active">
+        <div id="lottie-candle"></div>
+        <p>There’s no crowd, no noise — just a quiet little place for you.</p>
+        <button id="light-candle-btn">Light the candle to begin.</button>
+    </div>
+
+    <div id="message-room" class="scene">
+        <!-- Floating notes will be generated here by JavaScript -->
+    </div>
+
+    <div id="mystery-box" class="scene">
+        <div class="gift-box-container">
+            <img src="assets/gift-icon.svg" alt="A mystery box" id="gift-box-img">
+        </div>
+        <p>Here’s something small, just because it’s your day.</p>
+        <div id="gift-message" class="hidden">
+            <img src="assets/bear-icon.svg" alt="A bear" id="bear-icon">
+            <p>If I could gift you something real, it’d be this: A calm day. A clear mind. And one good reason to smile — even a little.</p>
+            <button id="close-box-btn">You can close the box whenever you’re ready. It’ll still be here.</button>
+        </div>
+    </div>
+
+    <div id="final-scene" class="scene">
+        <p class="final-text">Make a wish. No one has to know it but you.</p>
+        <div id="balloon-container">
+             <img src="assets/3-ballons-icon.svg" alt="A single black balloon" id="balloon-img">
+        </div>
+        <input type="text" id="wish-input" placeholder="Type your wish here (optional)">
+        <button id="release-balloon-btn">Click when you’re ready to let it go.</button>
+        <p id="final-message" class="hidden">Happy birthday. Quiet doesn’t mean forgotten.</p>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.12.2/lottie.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
